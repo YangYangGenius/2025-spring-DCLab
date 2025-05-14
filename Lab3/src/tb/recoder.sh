@@ -1,0 +1,1 @@
+vcs tb_AudRecorder.sv AudRecorder.sv -full64 -R -debug_access+all -sverilog +access+rw | tee compile_log.txt
