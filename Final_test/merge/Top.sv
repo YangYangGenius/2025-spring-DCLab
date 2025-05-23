@@ -1,9 +1,8 @@
-module merge(
+module Top(
     input i_clk,
     input i_rst_n,
     input i_key_0,
-    input i_key_1,
-    input i_key_2,
+
 
 // AudDSP and SRAM
 	output [19:0] o_SRAM_ADDR,
@@ -31,14 +30,14 @@ module merge(
 	output [6:0] o_time_2,
 
 // LED
-	output  [3:0] o_ledg,
+	output  [8:0] o_ledg,
 	output [17:0] o_ledr
 );
 
 // FSM
 parameter S_IDLE = 0; 
 parameter S_I2C  = 1;
-parameter S_WAIT = 2
+parameter S_WAIT = 2;
 parameter S_LEFT = 3; //左播放
 parameter S_RIGHT = 4; //等待
 logic [1:0] state_r, state_w;
@@ -82,7 +81,7 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
     assign addr_fetch = {music_count_r, 16'h0000} + addr_r; //取出音樂資料的地址
 
     always_comb begin
-        if (state = S_LEFT) music_count_w = 4'h2;
+        if (state_r == S_LEFT) music_count_w = 4'h2;
         else if (state_r == S_RIGHT && music_count_r <= 4'h8) music_count_w = music_count_r + 4'h2;
         else music_count_w = music_count_r;
     end
@@ -134,10 +133,10 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
     assign sum = a_extended + (a_extended << 3) + (a_extended << 4); // Multiply by 25
     assign o_time_2 = sum[14:8];
 
-    assign o_ledg = (state_r == S_IDLE) ? 4'b1111 :
-                    (state_r == S_I2C)  ? 4'b0001 : 
-                    (state_r == S_WAIT) ? 4'b0010 : 
-                    (state_r == S_LEFT) ? 4'b0100 : 4'b1000;
+    assign o_ledg = (state_r == S_IDLE) ? 9'b000001111 :
+                    (state_r == S_I2C)  ? 9'b000000001 : 
+                    (state_r == S_WAIT) ? 9'b000000010 : 
+                    (state_r == S_LEFT) ? 9'b000000100 : 9'b000001000;
 
 //-------------------------------I2C control-------------------------------
 
@@ -175,7 +174,7 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
 //-------------------------------FSM and CLock-------------------------------
 
     always_comb begin
-        state_w = state_r;
+    //    state_w = state_r;
         case(state_r)
             S_IDLE: begin
                 state_w = S_I2C;
@@ -184,13 +183,13 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
                 if (i2c_finished) state_w = S_WAIT;
             end
             S_WAIT: begin
-                if (i_key_0 && i_AUD_DACLRCK) state_w = S_RIGHT;
+                if (i_AUD_DACLRCK) state_w = S_RIGHT;
             end
             S_RIGHT: begin 
                 if (!i_AUD_DACLRCK) state_w = S_LEFT;
             end
             S_LEFT: begin
-                if (stop_r == 1'b1) state = S_WAIT;
+                if (stop_r) state_w = S_WAIT;
                 else if (i_AUD_DACLRCK) state_w = S_RIGHT;
             end
             default: state_w = state_r;
@@ -202,6 +201,10 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
         if (!i_rst_n) begin
             state_r <= S_IDLE;
             i2c_start_r <= 0;
+            read_data_r <= 16'b0;
+            music_count_r <= 4'b0;
+            addr_r <= 20'b0;
+            stop_r <= 1'b0;
 
         end
         else begin
@@ -211,7 +214,6 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
             music_count_r <= music_count_w;
             addr_r <= addr_w;
             stop_r <= stop_w;
-            data_play_r <= data_play_w;
         end
     end
 
