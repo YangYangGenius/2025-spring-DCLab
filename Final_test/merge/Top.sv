@@ -135,8 +135,7 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
 
     assign o_ledg = (state_r == S_IDLE) ? 9'b000001111 :
                     (state_r == S_I2C)  ? 9'b000000001 : 
-                    (state_r == S_WAIT) ? 9'b000000010 : 
-                    (state_r == S_LEFT) ? 9'b000000100 : 9'b000001000;
+                    (state_r == S_WAIT) ? 9'b000000010 : 9'b000000100;
 
 //-------------------------------I2C control-------------------------------
 
@@ -174,7 +173,7 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
 //-------------------------------FSM and CLock-------------------------------
 
     always_comb begin
-    //    state_w = state_r;
+        state_w = state_r;
         case(state_r)
             S_IDLE: begin
                 state_w = S_I2C;
@@ -183,7 +182,7 @@ parameter STOP_ADDR_COUNT = 20'h1FFFF; //四秒
                 if (i2c_finished) state_w = S_WAIT;
             end
             S_WAIT: begin
-                if (i_AUD_DACLRCK) state_w = S_RIGHT;
+                if (i_key_0 && i_AUD_DACLRCK) state_w = S_RIGHT;
             end
             S_RIGHT: begin 
                 if (!i_AUD_DACLRCK) state_w = S_LEFT;
