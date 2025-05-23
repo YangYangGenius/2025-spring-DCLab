@@ -1,3 +1,13 @@
+"""
+關於AudPlayer的說明(2025.05.23)：
+1.只會在左聲道輸出音訊資料，右聲道不會有任何音訊資料輸出。
+2.只有在state=LEFT(此時i_daclrck已經維持左聲道一周期)的第一個時脈週期會讀取音訊資料
+3.其他時間都不會讀取聲音資料
+4.o_aud_dacdat=0 一直維持0的話就沒有聲音
+
+"""
+
+
 module AudPlayer (
     input i_rst_n,
     input i_bclk,   
