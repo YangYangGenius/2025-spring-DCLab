@@ -232,13 +232,14 @@ assign dac_data = dac_data_r; // 將DAC數據寄存器的值輸出到DAC
 wire should_read_SRAM; // 用於判斷是否需要讀取SRAM
 assign should_read_SRAM = (
     state_r == S_PLAY
-    && time_in_sound_cycle_r == pressed_count_r
-    && time_r >= pressed_data_r[time_in_sound_cycle_r][19:0] // 檢查當前時間是否大於等於音效開始時間
-    && time_r < pressed_data_r[time_in_sound_cycle_r][19:0] + sound_length[pressed_data_r[time_in_sound_cycle_r][23:20]] // 檢查當前時間是否小於音效結束時間
+    && time_in_sound_cycle_r > 0
+    && time_in_sound_cycle_r <= pressed_count_r
+    && time_r >= pressed_data_r[time_in_sound_cycle_r-1][19:0] // 檢查當前時間是否大於等於音效開始時間
+    && time_r < pressed_data_r[time_in_sound_cycle_r-1][19:0] + sound_length[pressed_data_r[time_in_sound_cycle_r-1][23:20]] // 檢查當前時間是否小於音效結束時間
 );
 assign o_SRAM_ADDR = sound_addr[pressed_data_r[time_in_sound_cycle_r][23:20]] + (time_r - pressed_data_r[time_in_sound_cycle_r][19:0]); // 當需要讀取SRAM時，設置SRAM地址為對應音效的地址，否則設置為0
 wire [15:0] dac_data_w; // 用於DAC的數據線網
-assign dac_data_w = (state_r == S_PLAY) ? dac_data_r + ( (should_read_SRAM) ? io_SRAM_DQ : 0) : 0; // 當狀態為S_PLAY時，DAC數據增加，否則保持不變
+assign dac_data_w = (state_r == S_PLAY && i_AUD_DACLRCK) ? dac_data_r + ( (should_read_SRAM) ? io_SRAM_DQ : 0) : 0; // 當狀態為S_PLAY時，DAC數據增加，否則保持不變
 
 
 
