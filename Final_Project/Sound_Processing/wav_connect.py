@@ -3,6 +3,11 @@ import csv
 import numpy as np
 from scipy.io import wavfile
 
+import sys
+if sys.version_info[0] < 3:
+    reload(sys)
+    sys.setdefaultencoding('utf-8')     
+
 def load_pcm_wav(filepath):
     sr, data = wavfile.read(filepath)
     assert sr == 32000, f"{filepath} 不是 32kHz"
@@ -46,7 +51,8 @@ def save_csv(addr_map: dict, filename: str):
             writer.writerow([fname, start, end, length])
 
 # --- 主程式 ---
-wav_folder = "./sounds"  # 請放入你的 wav 檔案資料夾
+wav_folder = wav_folder = "C:/1Yang_University_programming_hw/4DCLab/Final_Project/Sound_Processing/sounds"
+
 output_hex = "output.hex"
 output_bin = "output.bin"
 output_csv = "address_map.csv"
@@ -56,9 +62,9 @@ save_hex(pcm_data, output_hex)
 save_bin(pcm_data, output_bin)
 save_csv(addr_map, output_csv)
 
-print("📍 Address Map:")
+print(" Address Map:")
 for fname, (start, end, length) in addr_map.items():
     print(f"{fname}: {start} ~ {end} (len={length})")
 
-print(f"\n✅ Done. Total samples: {len(pcm_data)}")
+print(f"\n Done. Total samples: {len(pcm_data)}")
 print(f"Output files: {output_hex}, {output_bin}, {output_csv}")
