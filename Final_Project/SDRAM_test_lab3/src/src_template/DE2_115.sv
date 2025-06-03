@@ -136,70 +136,118 @@ module DE2_115 (
 	inout [6:0] EX_IO
 );
 
-logic gpio_down0, gpio_down1;
+logic key0down, key1down, key2down, key3down;
+logic CLK_12M, CLK_100K, CLK_800K;
 
+wire [5:0] o_time;
 
-Debounce deb0(
-	.i_in(~GPIO[0]),
-	.i_rst_n(KEY[1]),
-	.i_clk(CLOCK_50),
-	.o_neg(gpio_down0)
+assign AUD_XCK = CLK_12M;
+
+Altpll pll0( // generate with qsys, please follow lab2 tutorials
+	.clk_clk(CLOCK_50),
+	.reset_reset_n(KEY[3]),
+	.altpll_12m_clk(CLK_12M),
+	.altpll_100k_clk(CLK_100K),
+	.altpll_800k_clk(CLK_800K)
 );
 
+// you can decide key down settings on your own, below is just an example
+// Debounce deb0(
+// 	.i_in(KEY[0]), // Record/Pause
+// 	.i_rst_n(KEY[3]),
+// 	.i_clk(CLK_12M),
+// 	.o_neg(key0down) 
+// );
 
+// Debounce deb1(
+// 	.i_in(KEY[1]), // Play/Pause
+// 	.i_rst_n(KEY[3]),
+// 	.i_clk(CLK_12M),
+// 	.o_neg(key1down) 
+// );
 
-Debounce deb1(
-	.i_in(~GPIO[1]),
-	.i_rst_n(KEY[1]),
-	.i_clk(CLOCK_50),
-	.o_neg(gpio_down1)
+Debounce deb2(
+	.i_in(KEY[2]), // Stop
+	.i_rst_n(KEY[3]),
+	.i_clk(CLK_12M),
+	.o_neg(key2down) 
 );
 
+Top top0(
+	.i_rst_n(KEY[3]),
+	.i_clk(CLK_12M),
+	.i_key_2(key2down),
+	.i_speed(SW[2:0]), // design how user can decide mode on your own
+	.i_slow_mode(SW[4]), // design how user can decide mode on your own
+	.i_is_slow(SW[3]), // design how user can decide mode on your own
+	
+	// AudDSP and SRAM
+	.o_SRAM_ADDR(SRAM_ADDR), // [19:0]
+	.io_SRAM_DQ(SRAM_DQ), // [15:0]
+	.o_SRAM_WE_N(SRAM_WE_N),
+	.o_SRAM_CE_N(SRAM_CE_N),
+	.o_SRAM_OE_N(SRAM_OE_N),
+	.o_SRAM_LB_N(SRAM_LB_N),
+	.o_SRAM_UB_N(SRAM_UB_N),
+	
+	// I2C
+	.i_clk_100k(CLK_100K),
+	.o_I2C_SCLK(I2C_SCLK),
+	.io_I2C_SDAT(I2C_SDAT),
+	
+	// AudPlayer
+	.i_AUD_ADCDAT(AUD_ADCDAT),
+	.i_AUD_ADCLRCK(AUD_ADCLRCK),
+	.i_AUD_BCLK(AUD_BCLK),
+	.i_AUD_DACLRCK(AUD_DACLRCK),
+	.o_AUD_DACDAT(AUD_DACDAT),
 
-wire [6:0] count0, count1, count2, count3, count4, count5, count6, count7;
+	// SEVENDECODER (optional display)
+	.o_time(o_time),
 
-Button button0(
-	.i_clk(CLOCK_50),
-	.i_rst_n(KEY[1]),
-	.i_GPIO_BTN(gpio_down0),
-	.o_LED(LEDG[0]),
-	.o_count(count0)
-);
+	// LCD (optional display)
+	// .i_clk_800k(CLK_800K),
+	// .o_LCD_DATA(LCD_DATA), // [7:0]
+	// .o_LCD_EN(LCD_EN),
+	// .o_LCD_RS(LCD_RS),
+	// .o_LCD_RW(LCD_RW),
+	// .o_LCD_ON(LCD_ON),
+	// .o_LCD_BLON(LCD_BLON),
 
-Button button1(
-	.i_clk(CLOCK_50),
-	.i_rst_n(KEY[1]),
-	.i_GPIO_BTN(~GPIO[1]),
-	.o_LED(LEDG[1]),
-	.o_count(count1)
+	// LED
+	.o_ledg(LEDG), // [8:0]
+	.o_ledr(LEDR) // [17:0]
 );
 
 SevenHexDecoder seven_dec0(
-	.i_hex(count0),
+	.i_hex(o_time),			// time
 	.o_seven_ten(HEX1),
 	.o_seven_one(HEX0)
 );
 
 SevenHexDecoder seven_dec1(
-	.i_hex(count1),
-	.o_seven_ten(HEX5),
+	.i_hex(SW[2:0]+1),		// speed
 	.o_seven_one(HEX4)
 );
 
-//assign HEX0 = '1;
-//assign HEX1 = '1;
+FastSlow fast_slow0(
+	.i_is_slow(SW[3]),		// is slow
+	.o_seven(HEX5)
+);
+
+SevenHexDecoder seven_dec2(
+	.i_hex(SW[4]),			// slow mode
+	.o_seven_one(HEX6)
+);
+
+// comment those are use for display
+// assign HEX0 = '1;
+// assign HEX1 = '1;
 assign HEX2 = '1;
 assign HEX3 = '1;
-//assign HEX4 = '1;
-//assign HEX5 = '1;
-assign HEX6 = '1;
+// assign HEX4 = '1;
+// assign HEX5 = '1;
+// assign HEX6 = '1;
 assign HEX7 = '1;
-
-`ifdef DUT_LAB1
-	initial begin
-		$fsdbDumpfile("LAB1.fsdb");
-		$fsdbDumpvars(0, DE2_115, "+mda");
-	end
-`endif
 
 endmodule
