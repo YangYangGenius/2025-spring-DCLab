@@ -51,11 +51,10 @@ def save_csv(addr_map: dict, filename: str):
             writer.writerow([fname, start, end, length])
 
 # --- 主程式 ---
-wav_folder = wav_folder = "C:/1Yang_University_programming_hw/4DCLab/Final_Project/Sound_Processing/sounds"
-
-output_hex = "output.hex"
-output_bin = "output.bin"
-output_csv = "address_map.csv"
+wav_folder = "C:/1Yang_University_programming_hw/4DCLab/Final_Project/Sound_Processing/sounds"
+output_hex = os.path.join(wav_folder, "output.hex")
+output_bin = os.path.join(wav_folder, "output.bin")
+output_csv = os.path.join(wav_folder, "address_map.csv")
 
 pcm_data, addr_map = process_wavs(wav_folder)
 save_hex(pcm_data, output_hex)
