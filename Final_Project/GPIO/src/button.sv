@@ -2,6 +2,8 @@ module Button(
     input i_clk,
     input i_rst_n,
     input i_GPIO_BTN,
+    input i_pos, //按鈕上升沿
+    input i_neg, //按鈕下降沿
     output o_LED,
     output [6:0] o_count
 );
@@ -16,7 +18,7 @@ assign o_count = count_r;
 
 
 always_comb begin
-    if(i_GPIO_BTN == 1'b1 && i_GPIO_BTN != LED_r) begin
+    if(i_pos) begin
         count_w = count_r + 1; //按鈕狀態改變時，計數器加1
     end 
     else begin

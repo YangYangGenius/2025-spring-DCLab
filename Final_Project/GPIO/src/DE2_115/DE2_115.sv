@@ -136,32 +136,40 @@ module DE2_115 (
 	inout [6:0] EX_IO
 );
 
+/*
+
 logic gpio_down0, gpio_down1;
 
-
-Debounce deb0(
-	.i_in(~GPIO[0]),
-	.i_rst_n(KEY[1]),
-	.i_clk(CLOCK_50),
-	.o_neg(gpio_down0)
-);
-
-
-
-Debounce deb1(
-	.i_in(~GPIO[1]),
-	.i_rst_n(KEY[1]),
-	.i_clk(CLOCK_50),
-	.o_neg(gpio_down1)
-);
-
-
+logic pos0, pos1, neg0, neg1;
 wire [6:0] count0, count1, count2, count3, count4, count5, count6, count7;
+
+
+Debounce_GPIO deb0(
+	.i_in(GPIO[0]),
+	.i_rst_n(KEY[1]),
+	.i_clk(CLOCK_50),
+	.o_debounced(gpio_down0),
+	.o_pos(pos0),
+	.o_neg(neg0)
+);
+
+
+Debounce_GPIO deb1(
+	.i_in(GPIO[1]),
+	.i_rst_n(KEY[1]),
+	.i_clk(CLOCK_50),
+	.o_debounced(gpio_down1),
+	.o_pos(pos1),
+	.o_neg(neg1)
+
+);
 
 Button button0(
 	.i_clk(CLOCK_50),
 	.i_rst_n(KEY[1]),
 	.i_GPIO_BTN(gpio_down0),
+	.i_pos(pos0),
+	.i_neg(neg0),
 	.o_LED(LEDG[0]),
 	.o_count(count0)
 );
@@ -169,7 +177,9 @@ Button button0(
 Button button1(
 	.i_clk(CLOCK_50),
 	.i_rst_n(KEY[1]),
-	.i_GPIO_BTN(~GPIO[1]),
+	.i_GPIO_BTN(gpio_down1),
+	.i_pos(pos1),
+	.i_neg(neg1),
 	.o_LED(LEDG[1]),
 	.o_count(count1)
 );
@@ -186,12 +196,30 @@ SevenHexDecoder seven_dec1(
 	.o_seven_one(HEX4)
 );
 
-//assign HEX0 = '1;
-//assign HEX1 = '1;
+*/
+
+
+wire [24:0] down, pos;
+
+assign LEDG[7:0]  = (SW[0])? down[7:0]  : pos[7:0];
+assign LEDR[17:1] = (SW[0])? down[24:8] : pos[24:8];
+
+Button_Array button_array(
+	.i_clk(CLOCK_50),
+	.i_rst_n(KEY[1]),
+	.i_GPIO_BTN(GPIO[24:0]),
+	.o_down(down),
+	.o_pos(pos)
+);
+
+
+
+assign HEX0 = '1;
+assign HEX1 = '1;
 assign HEX2 = '1;
 assign HEX3 = '1;
-//assign HEX4 = '1;
-//assign HEX5 = '1;
+assign HEX4 = '1;
+assign HEX5 = '1;
 assign HEX6 = '1;
 assign HEX7 = '1;
 
