@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_115
-Tue Jun 03 21:56:32 2025
+Fri Jun 06 15:41:06 2025
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -14,15 +14,61 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Debounce:deb0
- 10. Parameter Settings for User Entity Instance: Debounce:deb1
- 11. Parameter Settings for User Entity Instance: SevenHexDecoder:seven_dec0
- 12. Parameter Settings for User Entity Instance: SevenHexDecoder:seven_dec1
- 13. Port Connectivity Checks: "Debounce:deb1"
- 14. Port Connectivity Checks: "Debounce:deb0"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: Button_Array:button_array
+ 11. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_0
+ 12. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_1
+ 13. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_2
+ 14. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_3
+ 15. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_4
+ 16. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_5
+ 17. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_6
+ 18. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_7
+ 19. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_8
+ 20. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_9
+ 21. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_10
+ 22. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_11
+ 23. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_12
+ 24. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_13
+ 25. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_14
+ 26. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_15
+ 27. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_16
+ 28. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_17
+ 29. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_18
+ 30. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_19
+ 31. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_20
+ 32. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_21
+ 33. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_22
+ 34. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_23
+ 35. Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_24
+ 36. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_24"
+ 37. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_23"
+ 38. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_22"
+ 39. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_21"
+ 40. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_20"
+ 41. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_19"
+ 42. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_18"
+ 43. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_17"
+ 44. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_16"
+ 45. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_15"
+ 46. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_14"
+ 47. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_13"
+ 48. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_12"
+ 49. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_11"
+ 50. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_10"
+ 51. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_9"
+ 52. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_8"
+ 53. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_7"
+ 54. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_6"
+ 55. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_5"
+ 56. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_4"
+ 57. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_3"
+ 58. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_2"
+ 59. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_1"
+ 60. Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_0"
+ 61. Post-Synthesis Netlist Statistics for Top Partition
+ 62. Elapsed Time Per Partition
+ 63. Analysis & Synthesis Messages
 
 
 
@@ -49,15 +95,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 03 21:56:32 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 06 15:41:06 2025       ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
 ; Revision Name                      ; DE2_115                                     ;
 ; Top-level Entity Name              ; DE2_115                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 199                                         ;
-;     Total combinational functions  ; 198                                         ;
-;     Dedicated logic registers      ; 31                                          ;
-; Total registers                    ; 31                                          ;
+; Total logic elements               ; 578                                         ;
+;     Total combinational functions  ; 528                                         ;
+;     Dedicated logic registers      ; 425                                         ;
+; Total registers                    ; 425                                         ;
 ; Total pins                         ; 480                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -162,70 +208,91 @@ agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
+;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; src/button.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/button.sv                  ;         ;
-; src/DE2_115/SevenHexDecoder.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/DE2_115/SevenHexDecoder.sv ;         ;
-; src/DE2_115/Debounce.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/DE2_115/Debounce.sv        ;         ;
-; src/DE2_115/DE2_115.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/DE2_115/DE2_115.sv         ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; src/Button_Array.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/Button_Array.sv          ;         ;
+; src/DE2_115/Debounce_GPIO.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/DE2_115/Debounce_GPIO.sv ;         ;
+; src/DE2_115/DE2_115.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/User/Desktop/DCLab gruop11/2025-spring-DCLab/Final_Project/GPIO/src/DE2_115/DE2_115.sv       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 199                       ;
-;                                             ;                           ;
-; Total combinational functions               ; 198                       ;
-; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 145                       ;
-;     -- 3 input functions                    ; 18                        ;
-;     -- <=2 input functions                  ; 35                        ;
-;                                             ;                           ;
-; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 176                       ;
-;     -- arithmetic mode                      ; 22                        ;
-;                                             ;                           ;
-; Total registers                             ; 31                        ;
-;     -- Dedicated logic registers            ; 31                        ;
-;     -- I/O registers                        ; 0                         ;
-;                                             ;                           ;
-; I/O pins                                    ; 480                       ;
-;                                             ;                           ;
-; Embedded Multiplier 9-bit elements          ; 0                         ;
-;                                             ;                           ;
-; Maximum fan-out node                        ; Button:button0|count_r[5] ;
-; Maximum fan-out                             ; 39                        ;
-; Total fan-out                               ; 1469                      ;
-; Average fan-out                             ; 1.10                      ;
-+---------------------------------------------+---------------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 578            ;
+;                                             ;                ;
+; Total combinational functions               ; 528            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 102            ;
+;     -- 3 input functions                    ; 75             ;
+;     -- <=2 input functions                  ; 351            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 228            ;
+;     -- arithmetic mode                      ; 300            ;
+;                                             ;                ;
+; Total registers                             ; 425            ;
+;     -- Dedicated logic registers            ; 425            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 480            ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 425            ;
+; Total fan-out                               ; 3879           ;
+; Average fan-out                             ; 1.89           ;
++---------------------------------------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; |DE2_115                        ; 198 (0)           ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 480  ; 0            ; |DE2_115                            ; work         ;
-;    |Button:button0|             ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button:button0             ; work         ;
-;    |Button:button1|             ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button:button1             ; work         ;
-;    |Debounce:deb0|              ; 21 (21)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Debounce:deb0              ; work         ;
-;    |SevenHexDecoder:seven_dec0| ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|SevenHexDecoder:seven_dec0 ; work         ;
-;    |SevenHexDecoder:seven_dec1| ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|SevenHexDecoder:seven_dec1 ; work         ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Library Name ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; |DE2_115                          ; 528 (26)          ; 425 (0)      ; 0           ; 0            ; 0       ; 0         ; 480  ; 0            ; |DE2_115                                                     ; work         ;
+;    |Button_Array:button_array|    ; 502 (0)           ; 425 (50)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array                           ; work         ;
+;       |Debounce_GPIO:debounce_0|  ; 21 (21)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_0  ; work         ;
+;       |Debounce_GPIO:debounce_10| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_10 ; work         ;
+;       |Debounce_GPIO:debounce_11| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_11 ; work         ;
+;       |Debounce_GPIO:debounce_12| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_12 ; work         ;
+;       |Debounce_GPIO:debounce_13| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_13 ; work         ;
+;       |Debounce_GPIO:debounce_14| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_14 ; work         ;
+;       |Debounce_GPIO:debounce_15| ; 21 (21)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_15 ; work         ;
+;       |Debounce_GPIO:debounce_16| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_16 ; work         ;
+;       |Debounce_GPIO:debounce_17| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_17 ; work         ;
+;       |Debounce_GPIO:debounce_18| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_18 ; work         ;
+;       |Debounce_GPIO:debounce_19| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_19 ; work         ;
+;       |Debounce_GPIO:debounce_1|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_1  ; work         ;
+;       |Debounce_GPIO:debounce_20| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_20 ; work         ;
+;       |Debounce_GPIO:debounce_21| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_21 ; work         ;
+;       |Debounce_GPIO:debounce_22| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_22 ; work         ;
+;       |Debounce_GPIO:debounce_23| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_23 ; work         ;
+;       |Debounce_GPIO:debounce_24| ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_24 ; work         ;
+;       |Debounce_GPIO:debounce_2|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_2  ; work         ;
+;       |Debounce_GPIO:debounce_3|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_3  ; work         ;
+;       |Debounce_GPIO:debounce_4|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_4  ; work         ;
+;       |Debounce_GPIO:debounce_5|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_5  ; work         ;
+;       |Debounce_GPIO:debounce_6|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_6  ; work         ;
+;       |Debounce_GPIO:debounce_7|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_7  ; work         ;
+;       |Debounce_GPIO:debounce_8|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_8  ; work         ;
+;       |Debounce_GPIO:debounce_9|  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_115|Button_Array:button_array|Debounce_GPIO:debounce_9  ; work         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,93 +301,609 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
+; Total registers                              ; 425   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 13    ;
-; Number of registers using Asynchronous Clear ; 31    ;
+; Number of registers using Synchronous Load   ; 325   ;
+; Number of registers using Asynchronous Clear ; 425   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Debounce:deb0 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; CNT_N          ; 8191  ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++----------------------------------------------------------------------------+
+; Inverted Register Statistics                                               ;
++------------------------------------------------------------------+---------+
+; Inverted Register                                                ; Fan out ;
++------------------------------------------------------------------+---------+
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[12] ; 3       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_0|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_1|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_2|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_3|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_4|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_5|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[12] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[8]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[9]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[10] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_6|counter_r[11] ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[0]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[1]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[2]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[3]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[4]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[5]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[6]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[7]  ; 2       ;
+; Button_Array:button_array|Debounce_GPIO:debounce_7|counter_r[12] ; 2       ;
+; Total number of inverted registers = 325*                        ;         ;
++------------------------------------------------------------------+---------+
+* Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; NUM_BTNS       ; 25    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Debounce:deb1 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; CNT_N          ; 8191  ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_0 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SevenHexDecoder:seven_dec0 ;
-+----------------+---------+----------------------------------------------+
-; Parameter Name ; Value   ; Type                                         ;
-+----------------+---------+----------------------------------------------+
-; D0             ; 1000000 ; Unsigned Binary                              ;
-; D1             ; 1111001 ; Unsigned Binary                              ;
-; D2             ; 0100100 ; Unsigned Binary                              ;
-; D3             ; 0110000 ; Unsigned Binary                              ;
-; D4             ; 0011001 ; Unsigned Binary                              ;
-; D5             ; 0010010 ; Unsigned Binary                              ;
-; D6             ; 0000010 ; Unsigned Binary                              ;
-; D7             ; 1011000 ; Unsigned Binary                              ;
-; D8             ; 0000000 ; Unsigned Binary                              ;
-; D9             ; 0010000 ; Unsigned Binary                              ;
-+----------------+---------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_1 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SevenHexDecoder:seven_dec1 ;
-+----------------+---------+----------------------------------------------+
-; Parameter Name ; Value   ; Type                                         ;
-+----------------+---------+----------------------------------------------+
-; D0             ; 1000000 ; Unsigned Binary                              ;
-; D1             ; 1111001 ; Unsigned Binary                              ;
-; D2             ; 0100100 ; Unsigned Binary                              ;
-; D3             ; 0110000 ; Unsigned Binary                              ;
-; D4             ; 0011001 ; Unsigned Binary                              ;
-; D5             ; 0010010 ; Unsigned Binary                              ;
-; D6             ; 0000010 ; Unsigned Binary                              ;
-; D7             ; 1011000 ; Unsigned Binary                              ;
-; D8             ; 0000000 ; Unsigned Binary                              ;
-; D9             ; 0010000 ; Unsigned Binary                              ;
-+----------------+---------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_2 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Debounce:deb1"                                                                                                  ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                  ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; o_neg       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; o_debounced ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; o_pos       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_3 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Debounce:deb0"                                                                                                  ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                  ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; o_debounced ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; o_pos       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_4 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_5 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_6 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_7 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_8 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_9 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_10 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_11 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_12 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_13 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_14 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_15 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_16 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_17 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_18 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_19 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_20 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_21 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_22 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_23 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Button_Array:button_array|Debounce_GPIO:debounce_24 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; CNT_N          ; 8191  ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_24"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_23"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_22"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_21"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_20"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_19"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_18"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_17"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_16"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_15"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_14"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_13"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_12"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_11"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_10"                                                      ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_9"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_8"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_7"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_6"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_5"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_4"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_3"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_2"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_1"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Button_Array:button_array|Debounce_GPIO:debounce_0"                                                       ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_neg ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -329,24 +912,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 480                         ;
-; cycloneiii_ff         ; 31                          ;
-;     CLR               ; 6                           ;
-;     CLR SLD           ; 13                          ;
-;     ENA CLR           ; 12                          ;
+; cycloneiii_ff         ; 425                         ;
+;     CLR               ; 100                         ;
+;     CLR SLD           ; 325                         ;
 ; cycloneiii_io_obuf    ; 141                         ;
-; cycloneiii_lcell_comb ; 200                         ;
-;     arith             ; 22                          ;
-;         2 data inputs ; 20                          ;
-;         3 data inputs ; 2                           ;
-;     normal            ; 178                         ;
+; cycloneiii_lcell_comb ; 529                         ;
+;     arith             ; 300                         ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 275                         ;
+;     normal            ; 229                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 145                         ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 75                          ;
+;         4 data inputs ; 102                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.04                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -355,7 +937,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -365,20 +947,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Tue Jun 03 21:56:20 2025
+    Info: Processing started: Fri Jun 06 15:40:54 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Button -c DE2_115
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file src/button.sv
-    Info (12023): Found entity 1: Button
+Info (12021): Found 1 design units, including 1 entities, in source file src/button_array.sv
+    Info (12023): Found entity 1: Button_Array
 Info (12021): Found 1 design units, including 1 entities, in source file src/de2_115/sevenhexdecoder.sv
     Info (12023): Found entity 1: SevenHexDecoder
-Info (12021): Found 1 design units, including 1 entities, in source file src/de2_115/debounce.sv
-    Info (12023): Found entity 1: Debounce
+Info (12021): Found 1 design units, including 1 entities, in source file src/de2_115/debounce_gpio.sv
+    Info (12023): Found entity 1: Debounce_GPIO
 Info (12021): Found 1 design units, including 1 entities, in source file src/de2_115/de2_115.sv
     Info (12023): Found entity 1: DE2_115
 Info (12127): Elaborating entity "DE2_115" for the top level hierarchy
-Warning (10034): Output port "LEDG[8..2]" at DE2_115.sv(8) has no driver
-Warning (10034): Output port "LEDR" at DE2_115.sv(9) has no driver
+Warning (10034): Output port "LEDG[8]" at DE2_115.sv(8) has no driver
+Warning (10034): Output port "LEDR[0]" at DE2_115.sv(9) has no driver
 Warning (10034): Output port "VGA_B" at DE2_115.sv(38) has no driver
 Warning (10034): Output port "VGA_G" at DE2_115.sv(41) has no driver
 Warning (10034): Output port "VGA_R" at DE2_115.sv(43) has no driver
@@ -443,21 +1025,38 @@ Warning (10034): Output port "FL_WP_N" at DE2_115.sv(125) has no driver
 Warning (10034): Output port "HSMC_CLKOUT_P1" at DE2_115.sv(130) has no driver
 Warning (10034): Output port "HSMC_CLKOUT_P2" at DE2_115.sv(131) has no driver
 Warning (10034): Output port "HSMC_CLKOUT0" at DE2_115.sv(132) has no driver
-Info (12128): Elaborating entity "Debounce" for hierarchy "Debounce:deb0"
-Warning (10230): Verilog HDL assignment warning at Debounce.sv(23): truncated value with size 32 to match size of target (13)
-Warning (10230): Verilog HDL assignment warning at Debounce.sv(25): truncated value with size 32 to match size of target (13)
-Info (12128): Elaborating entity "Button" for hierarchy "Button:button0"
-Warning (10230): Verilog HDL assignment warning at button.sv(20): truncated value with size 32 to match size of target (7)
-Info (12128): Elaborating entity "SevenHexDecoder" for hierarchy "SevenHexDecoder:seven_dec0"
-Info (276014): Found 4 instances of uninferred RAM logic
-    Info (276004): RAM logic "SevenHexDecoder:seven_dec0|Ram1" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "SevenHexDecoder:seven_dec0|Ram0" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "SevenHexDecoder:seven_dec1|Ram1" is uninferred due to inappropriate RAM size
-    Info (276004): RAM logic "SevenHexDecoder:seven_dec1|Ram0" is uninferred due to inappropriate RAM size
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "Button_Array" for hierarchy "Button_Array:button_array"
+Info (12128): Elaborating entity "Debounce_GPIO" for hierarchy "Button_Array:button_array|Debounce_GPIO:debounce_0"
+Warning (10230): Verilog HDL assignment warning at Debounce_GPIO.sv(32): truncated value with size 32 to match size of target (13)
+Warning (10230): Verilog HDL assignment warning at Debounce_GPIO.sv(35): truncated value with size 32 to match size of target (13)
+Warning (10230): Verilog HDL assignment warning at Debounce_GPIO.sv(55): truncated value with size 32 to match size of target (13)
+Warning (12241): 25 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[0]" has no driver
     Warning (13040): bidirectional pin "GPIO[1]" has no driver
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver
+    Warning (13040): bidirectional pin "GPIO[3]" has no driver
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver
+    Warning (13040): bidirectional pin "GPIO[9]" has no driver
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver
     Warning (13040): bidirectional pin "LCD_DATA[0]" has no driver
     Warning (13040): bidirectional pin "LCD_DATA[1]" has no driver
     Warning (13040): bidirectional pin "LCD_DATA[2]" has no driver
@@ -552,29 +1151,6 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "FL_DQ[5]" has no driver
     Warning (13040): bidirectional pin "FL_DQ[6]" has no driver
     Warning (13040): bidirectional pin "FL_DQ[7]" has no driver
-    Warning (13040): bidirectional pin "GPIO[2]" has no driver
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver
-    Warning (13040): bidirectional pin "GPIO[4]" has no driver
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver
-    Warning (13040): bidirectional pin "GPIO[6]" has no driver
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver
-    Warning (13040): bidirectional pin "GPIO[8]" has no driver
-    Warning (13040): bidirectional pin "GPIO[9]" has no driver
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver
     Warning (13040): bidirectional pin "GPIO[25]" has no driver
     Warning (13040): bidirectional pin "GPIO[26]" has no driver
     Warning (13040): bidirectional pin "GPIO[27]" has no driver
@@ -599,31 +1175,22 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "EX_IO[6]" has no driver
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "SMA_CLKOUT" is stuck at GND
-    Warning (13410): Pin "LEDG[2]" is stuck at GND
-    Warning (13410): Pin "LEDG[3]" is stuck at GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[6]" is stuck at GND
-    Warning (13410): Pin "LEDG[7]" is stuck at GND
     Warning (13410): Pin "LEDG[8]" is stuck at GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND
-    Warning (13410): Pin "LEDR[2]" is stuck at GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND
-    Warning (13410): Pin "LEDR[5]" is stuck at GND
-    Warning (13410): Pin "LEDR[6]" is stuck at GND
-    Warning (13410): Pin "LEDR[7]" is stuck at GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND
-    Warning (13410): Pin "LEDR[9]" is stuck at GND
-    Warning (13410): Pin "LEDR[10]" is stuck at GND
-    Warning (13410): Pin "LEDR[11]" is stuck at GND
-    Warning (13410): Pin "LEDR[12]" is stuck at GND
-    Warning (13410): Pin "LEDR[13]" is stuck at GND
-    Warning (13410): Pin "LEDR[14]" is stuck at GND
-    Warning (13410): Pin "LEDR[15]" is stuck at GND
-    Warning (13410): Pin "LEDR[16]" is stuck at GND
-    Warning (13410): Pin "LEDR[17]" is stuck at GND
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC
     Warning (13410): Pin "HEX2[0]" is stuck at VCC
     Warning (13410): Pin "HEX2[1]" is stuck at VCC
     Warning (13410): Pin "HEX2[2]" is stuck at VCC
@@ -638,6 +1205,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX3[4]" is stuck at VCC
     Warning (13410): Pin "HEX3[5]" is stuck at VCC
     Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC
     Warning (13410): Pin "HEX6[0]" is stuck at VCC
     Warning (13410): Pin "HEX6[1]" is stuck at VCC
     Warning (13410): Pin "HEX6[2]" is stuck at VCC
@@ -819,7 +1400,7 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 89 input pin(s) that do not drive logic
+Warning (21074): Design contains 88 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK2_50"
     Warning (15610): No output dependent on input pin "CLOCK3_50"
     Warning (15610): No output dependent on input pin "ENETCLK_25"
@@ -827,7 +1408,6 @@ Warning (21074): Design contains 89 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]"
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-    Warning (15610): No output dependent on input pin "SW[0]"
     Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
@@ -909,14 +1489,14 @@ Warning (21074): Design contains 89 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "HSMC_RX_D_P[14]"
     Warning (15610): No output dependent on input pin "HSMC_RX_D_P[15]"
     Warning (15610): No output dependent on input pin "HSMC_RX_D_P[16]"
-Info (21057): Implemented 679 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1058 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 91 input pins
     Info (21059): Implemented 248 output pins
     Info (21060): Implemented 141 bidirectional pins
-    Info (21061): Implemented 199 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 521 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Tue Jun 03 21:56:32 2025
+    Info (21061): Implemented 578 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 525 warnings
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Fri Jun 06 15:41:06 2025
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:20
 

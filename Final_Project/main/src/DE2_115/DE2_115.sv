@@ -152,11 +152,91 @@ Altpll pll0( // generate with qsys, please follow lab2 tutorials
 );
 
 // you can decide key down settings on your own, below is just an example
-Debounce deb0(
-	.i_in(KEY[0]), // Record/Pause
-	.i_rst_n(KEY[3]),
+// Debounce deb0(
+// 	.i_in(KEY[0]), // Record/Pause
+// 	.i_rst_n(KEY[3]),
+// 	.i_clk(CLK_12M),
+// 	.o_neg(key0down) 
+// );
+Debounce_GPIO debounce_0(
+	.i_in(KEY[0]),
 	.i_clk(CLK_12M),
-	.o_neg(key0down) 
+	.i_rst_n(KEY[3]),
+	.o_debounced(key0down),
+	.o_pos(key0pos),
+	.o_neg(key0neg) 
+);
+
+Debounce_GPIO debounce_16(
+	.i_in(SW[16]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw16down),
+	.o_pos(sw16pos),
+	.o_neg(sw16neg) 
+);
+
+Debounce_GPIO debounce_15(
+	.i_in(SW[15]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw15down),
+	.o_pos(sw15pos),
+	.o_neg(sw15neg) 
+);
+
+Debounce_GPIO debounce_14(
+	.i_in(SW[14]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw14down),
+	.o_pos(sw14pos),
+	.o_neg(sw14neg) 
+);
+
+Debounce_GPIO debounce_13(
+	.i_in(SW[13]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw13down),
+	.o_pos(sw13pos),
+	.o_neg(sw13neg) 
+);
+
+Debounce_GPIO debounce_12(
+	.i_in(SW[12]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw12down),
+	.o_pos(sw12pos),
+	.o_neg(sw12neg) 
+);
+
+Debounce_GPIO debounce_11(
+	.i_in(SW[11]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw11down),
+	.o_pos(sw11pos),
+	.o_neg(sw11neg) 
+);
+
+Debounce_GPIO debounce_10(
+	.i_in(SW[10]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw10down),
+	.o_pos(sw10pos),
+	.o_neg(sw10neg) 
+);
+
+Debounce_GPIO debounce_9(
+	.i_in(SW[9]),
+	.i_clk(CLK_12M),
+	.i_rst_n(KEY[3]),
+	.o_debounced(sw9down),
+	.o_pos(sw9pos),
+	.o_neg(sw9neg) 
 );
 
 Debounce deb1(
@@ -176,9 +256,37 @@ Debounce deb2(
 Main main0(
 	.i_rst_n(KEY[3]),
 	.i_clk(CLK_12M),
+	// .i_key_0(key0down),
 	.i_key_0(key0down),
+	.i_key_0_pos(key0pos),
+	.i_key_0_neg(key0neg),
 	.i_key_1(key1down),
 	.i_key_2(key2down),
+
+	.i_sw_16(sw16down),
+	.i_sw_16_pos(sw16pos),
+	.i_sw_16_neg(sw16neg),
+	.i_sw_15(sw15down),
+	.i_sw_15_pos(sw15pos),
+	.i_sw_15_neg(sw15neg),
+	.i_sw_14(sw14down),
+	.i_sw_14_pos(sw14pos),
+	.i_sw_14_neg(sw14neg),
+	.i_sw_13(sw13down),
+	.i_sw_13_pos(sw13pos),
+	.i_sw_13_neg(sw13neg),
+	.i_sw_12(sw12down),
+	.i_sw_12_pos(sw12pos),
+	.i_sw_12_neg(sw12neg),
+	.i_sw_11(sw11down),
+	.i_sw_11_pos(sw11pos),
+	.i_sw_11_neg(sw11neg),
+	.i_sw_10(sw10down),
+	.i_sw_10_pos(sw10pos),
+	.i_sw_10_neg(sw10neg),
+	.i_sw_9(sw9down),
+	.i_sw_9_pos(sw9pos),
+	.i_sw_9_neg(sw9neg),
 	
 	// SRAM
 	.o_SRAM_ADDR(SRAM_ADDR), // [19:0]

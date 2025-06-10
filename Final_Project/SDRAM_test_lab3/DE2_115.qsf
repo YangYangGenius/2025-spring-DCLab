@@ -1111,13 +1111,14 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/Main0606.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/Debounce_GPIO.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/DE2_115/SevenHexDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/DE2_115/FastSlow.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/DE2_115/Debounce.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/DE2_115/DE2_115.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/merge.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/memory.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/Main.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/I2cInitializer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../main/src/AudPlayer.sv
 set_global_assignment -name VERILOG_FILE Altpll/synthesis/Altpll.v -library Altpll
