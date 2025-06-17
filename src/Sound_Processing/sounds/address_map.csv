@@ -1,7 +1,0 @@
-sound_name,start_addr,end_addr,length
-Crash.wav,0,39999,40000
-HHClose.wav,40000,79999,40000
-HHOpen.wav,80000,119999,40000
-Kick1.wav,120000,159999,40000
-Snare1.wav,160000,199999,40000
-Tom1.wav,200000,239999,40000
